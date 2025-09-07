@@ -1,0 +1,123 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #d0c6ff, #c6e2ff);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.test-container {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4a5568;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.test-description {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.timer {
+    font-size: 1.5rem;
+    color: #4a5568;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question-block {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.question-block h3 {
+    font-size: 1.5rem;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.answer-block {
+    margin-bottom: 10px;
+}
+
+.answer-block label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+.answer-block input[type="radio"] {
+    margin-right: 10px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.submit-button:hover {
+    background-color: #5a67d8;
+    transform: scale(1.05);
+}
+
+.result-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result-container h1 {
+    font-size: 2rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+.result-container p {
+    font-size: 1.5rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.back-button:hover {
+    background-color: #5a67d8;
+    transform: scale(1.05);
+}

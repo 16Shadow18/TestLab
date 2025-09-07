@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #d0c6ff, #c6e2ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.site-name {
+    font-size: 10rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Georgia', serif;
+
+    letter-spacing: 4px;
+    background: linear-gradient(135deg, #667eea, #5a67d8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #667eea, 0 0 20px #667eea, 0 0 30px #667eea;
+    }
+    100% {
+        text-shadow: 0 0 20px #5a67d8, 0 0 40px #5a67d8, 0 0 60px #5a67d8;
+    }
+}
+
+.login-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+.login-form label {
+    display: block;
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #4a5568;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+.login-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #5a67d8;
+    transform: scale(1.05);
+}
+
+.login-form button[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+.register-link {
+    margin-top: 15px;
+    text-align: center;
+    color: #4a5568;
+}
+
+.register-link button {
+    background: none;
+    border: none;
+    color: #667eea;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.register-link button:hover {
+    color: #5a67d8;
+}
+
+.error-message {
+    color: #e53e3e;
+    text-align: center;
+    margin-bottom: 15px;
+}

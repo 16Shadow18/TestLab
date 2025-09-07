@@ -1,0 +1,202 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #d0c6ff, #c6e2ff);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.create-test-container {
+    width: 800px;
+    max-width: 1000px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    padding: 10px 20px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.back-button:hover {
+    background-color: #5a67d8;
+    transform: scale(0.7);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #4a5568;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.question-block {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.question-block h3 {
+    font-size: 1.5rem;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.question-block button {
+    padding: 10px 20px;
+
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 10px;
+}
+
+.question-block button:hover {
+
+    transform: scale(1.05);
+}
+
+.answer-block {
+    margin-bottom: 10px;
+}
+
+.answer-block label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.answer-block input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #4a5568;
+    transition: border-color 0.3s ease;
+}
+
+.answer-block input[type="text"]:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+.answer-block input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.add-question-button,
+.add-answer-button,
+.submit-button {
+    padding: 10px 20px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 10px;
+}
+
+.add-question-button:hover,
+.submit-button:hover {
+    background-color: #5a67d8;
+    transform: scale(1.05);
+}
+
+
+
+.add-answer-button {
+    background-color: #636fd4;
+}
+
+.add-answer-button:hover {
+    background-color: #3d47a1;
+}
+
+.delete-question-button{
+    background-color: #e53e3e;
+}
+.delete-question-button:hover{
+    background-color: #c53030;
+}
+
+/* Добавим в конец файла */
+.create-test-container select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.create-test-container input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.create-test-container label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #4a5568;
+}
